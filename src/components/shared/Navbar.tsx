@@ -53,7 +53,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/MyPlan"
+              href="/listed-plan"
               className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm hover:bg-base-100/10 hover:text-primary transition-all duration-200 group"
             >
               <svg

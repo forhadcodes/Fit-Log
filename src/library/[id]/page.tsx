@@ -105,14 +105,14 @@ const LiftCardDetails = async({params}: ILiftCardDetailsProps) => {
 
                     {/* নিচের অ্যাকশন বাটনসমূহ */}
                     <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-800">
-                        <button className="flex-1 bg-[#CCFF00] hover:bg-[#b5e000] text-black font-extrabold py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center gap-2 text-sm uppercase tracking-wide">
+                        <button className="flex-1 bg-[#CCFF00] hover:bg-[#b5e000] text-black font-normal py-3.5 px-3 rounded-xl transition duration-200 flex items-center justify-center gap-2 text-sm uppercase tracking-wide">
                             <svg xmlns="http://w3.org" className="h-4 w-4 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                             </svg>
                             Add to today's plan
                         </button>
                         
-                        <button className="bg-[#1A1D26] hover:bg-[#242936] text-white border border-gray-800 font-bold py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center gap-2 text-sm uppercase tracking-wide">
+                        <button className="bg-[#1A1D26] hover:bg-[#242936] text-white border border-gray-800 font-normal py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center gap-2 text-sm uppercase tracking-wide">
                             <svg xmlns="http://w3.org" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
                             </svg>
