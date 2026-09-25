@@ -4,19 +4,19 @@ import { ILiftData } from "@/types/liftcard";
 import React, { useContext } from "react";
 import { toast } from "react-toastify";
 
-const TodaysPlanBtn = ({lift}:{lift: ILiftData}) => {
+const SavedForLaterBtn = ({lift}:{lift: ILiftData}) => {
 
-    const {todaysPlan, setTodaysPlan} =useContext(LiftCardContext);
+    const {savedForLater, setSavedForLater} =useContext(LiftCardContext);
     // console.log(liftProvider, 'Lift Provider');
 
-    const handleTodaysPlan = () => {
+    const handleSavedForLater = () => {
         console.log('todays plan btn trigger', lift);
-        setTodaysPlan([...todaysPlan, lift])
-        toast.success(`You have read "${lift.name}"`)
+        setSavedForLater([...savedForLater, lift])
+        toast.success(`You have add for later"${lift.name}"`)
     }
   return (
     <div>
-      <button className="flex-1 bg-[#CCFF00] hover:bg-[#b5e000] text-black font-extrabold py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center gap-2 text-sm uppercase tracking-wide" onClick={()=> handleTodaysPlan()}>
+      <button className="flex-1 bg-[#CCFF00] hover:bg-[#b5e000] text-black font-extrabold py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center gap-2 text-sm uppercase tracking-wide" onClick={()=> handleSavedForLater()}>
         <svg
           xmlns="http://w3.org"
           className="h-4 w-4 stroke-[3]"
@@ -31,10 +31,10 @@ const TodaysPlanBtn = ({lift}:{lift: ILiftData}) => {
             d="M12 6v6m0 0v6m0-6h6m-6 0H6"
           />
         </svg>
-        Add to today's plan
+        Saved for Later
       </button>
     </div>
   );
 };
 
-export default TodaysPlanBtn;
+export default SavedForLaterBtn;

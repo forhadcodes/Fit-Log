@@ -1,3 +1,4 @@
+import SavedForLaterBtn from '@/components/liftDetails/SavedForLaterBtn';
 import TodaysPlanBtn from '@/components/liftDetails/TodaysPlanBtn';
 import { ILiftData } from '@/types/liftcard';
 import Image from 'next/image';
@@ -108,12 +109,7 @@ const LiftCardDetails = async({params}: ILiftCardDetailsProps) => {
                     <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-800">
                         <TodaysPlanBtn lift={lift}></TodaysPlanBtn>
                         
-                        <button className="bg-[#1A1D26] hover:bg-[#242936] text-white border border-gray-800 font-bold py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center gap-2 text-sm uppercase tracking-wide">
-                            <svg xmlns="http://w3.org" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                            </svg>
-                            Save for later
-                        </button>
+                        <SavedForLaterBtn lift={lift}></SavedForLaterBtn>
                     </div>
                 </div>
 
