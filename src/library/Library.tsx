@@ -1,5 +1,6 @@
 import React from "react";
 import { ILiftData } from "@/types/liftcard";
+import LibraryLiftCard from "@/components/shared/LibraryLiftCard";
 
 const getLibraryData = async (): Promise<ILiftData[]> => {
   const res = await fetch("https://api.abcz.workers.dev/api/fitlog");
