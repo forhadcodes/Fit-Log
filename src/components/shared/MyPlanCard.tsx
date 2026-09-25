@@ -18,8 +18,8 @@ const MyPlanCard = ({ lift }: IMyPlanCardProps) => {
             <Image
               src={lift.image}
               alt={lift.name || "Workout Image"}
-              width={90}
-              height={60}
+              width={150}
+              height={110}
               className="w-full h-full object-cover object-top rounded-xl"
             />
           </div>

@@ -19,7 +19,7 @@ const Navbtn = () => {
           
           {/* ১. Plan Badge - অ্যাকসেন্ট নিয়ন ব্যাকগ্রাউন্ড পিল বাটন */}
           <Link 
-            href="/my-plan" 
+            href="/listed-plan" 
             className="flex items-center gap-1.5 rounded-full bg-[#ccff00] px-4 py-1.5 text-xs font-black uppercase tracking-wider text-black transition-all duration-200 hover:scale-[1.02] shadow-[0_2px_10px_rgba(204,255,0,0.15)]"
           >
             <span>Plan</span>
@@ -30,7 +30,7 @@ const Navbtn = () => {
 
           {/* ২. Saved Badge - বর্ডার/আউটলাইন পিল বাটন */}
           <Link 
-            href="/my-plan" 
+            href="/listed-plan" 
             className="flex items-center gap-1.5 rounded-full border border-neutral-700/80 bg-neutral-900/40 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white transition-all duration-200 hover:border-neutral-500 hover:bg-neutral-900"
           >
             <span>Saved</span>
