@@ -26,7 +26,7 @@ const Navbar = () => {
               />
             </div>
           </div>
-          <p className="text-base sm:text-lg font-black tracking-wider bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hidden xs:block font-sans uppercase">
+          <p className="text-base sm:text-lg font-black tracking-wider bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hidden sm:block font-sans uppercase">
             FITLOG
           </p>
         </Link>
