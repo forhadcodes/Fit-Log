@@ -2,7 +2,7 @@
 
 FitLog is a dark-themed, no-nonsense gym companion application built for modern athletes. The platform provides a complete workout library covering major muscle groups, allowing fitness enthusiasts to discover exercises, seamlessly build their daily routine under a structured log, track dynamic live metrics, and organize their fitness journey with zero friction.
 
-🌐 **Live Deployment:** [Insert Your Vercel/Netlify Live Link Here]
+🌐 **Live Deployment:** [Insert Your Vercel Live Link Here]
 🐙 **GitHub Repository:** [Insert Your Repository Link Here]
 
 ---
