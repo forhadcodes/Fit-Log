@@ -12,8 +12,8 @@ const Footer = () => {
       
       <Image src={FooterLogo}
       alt="FITLOG Logo"
-      width={32}
-      height={32}
+      width={30}
+      height={30}
       className="object-contain"></Image>
 
 
