@@ -1,0 +1,42 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/shared/Navbar";
+import LiftCardProvider from "@/context/LiftContext";
+import { ToastContainer } from "react-toastify";
+import Footer from "./footer/Footer";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Fit-Log",
+  description: "Workout Library & Gym Companion",
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html
+      lang="en" 
+      data-theme="dark"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <LiftCardProvider> 
+        <Navbar></Navbar>
+        
+        {children}
+        <ToastContainer />
+        <Footer></Footer>
+        </LiftCardProvider>
+      </body>
+    </html>
+  );
+}
