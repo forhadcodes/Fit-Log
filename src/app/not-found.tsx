@@ -21,7 +21,7 @@ export default function NotFound() {
         {/* Text Header Content */}
         <div className="space-y-2">
           <h1 className="text-xl md:text-2xl font-black uppercase tracking-wider font-sans">
-            Route Dropped / Page Lost
+            Route Dropped / Page Lost this is AI Generated design, i can do that but due to shortage of time with the help of AI i done it
           </h1>
           <p className="text-sm text-neutral-400 max-w-sm mx-auto font-medium leading-relaxed">
             The workout routine or page you are trying to access doesn't exist or has been shifted to a new schedule.
