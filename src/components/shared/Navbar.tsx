@@ -31,7 +31,6 @@ const Navbar = () => {
           </p>
         </Link>
 
-        {/* Center Side: Navigation Links (Takes available space, scales button padding) */}
         <div className="flex-grow flex justify-center">
           <ul className="flex items-center gap-1 sm:gap-3 md:gap-4 font-medium">
             <li>
@@ -61,7 +60,6 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Right Side: Auth / CTA Button (Stays anchored to the right) */}
         <div className="shrink-0 flex justify-end">
           <Navbtn />
         </div>

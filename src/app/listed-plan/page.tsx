@@ -67,7 +67,6 @@ const ListedLift = () => {
   return (
     <div className="min-h-screen bg-[#0d0e12] p-4 font-sans text-white sm:p-8 md:p-12">
       <div className="mx-auto max-w-7xl space-y-6">
-        {/* Header */}
         <div>
           <h1 className="font-sans text-3xl font-black uppercase tracking-wider">
             My Plan
@@ -78,7 +77,6 @@ const ListedLift = () => {
           </p>
         </div>
 
-        {/* Statistics */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           <div className="rounded-xl border border-neutral-800/20 bg-[#121318] p-6 shadow-lg">
             <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-neutral-500">
@@ -111,9 +109,7 @@ const ListedLift = () => {
           </div>
         </div>
 
-        {/* Tabs + Sorting */}
         <div className="flex flex-col gap-4 border-t border-neutral-800/40 pt-4 sm:flex-row sm:items-center sm:justify-between">
-          {/* Tabs */}
           <div className="tabs tabs-boxed flex max-w-max gap-1 rounded-full border border-neutral-800/60 bg-[#121318] p-1.5">
             <button
               onClick={() => setActiveTab("today")}
@@ -174,7 +170,6 @@ const ListedLift = () => {
           </div>
         </div>
 
-        {/* Workout List */}
         <div className="w-full pt-2">
           {currentList.length > 0 ? (
             <div className="grid grid-cols-1 gap-4">
