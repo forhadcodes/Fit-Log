@@ -15,7 +15,7 @@ const getLibraryData = async (): Promise<ILiftData[]> => {
     try {
         const res = await fetch(
             FITLOG_ENDPOINT,
-            { cache: 'no-store' } // ensure fresh data on the server component
+            { cache: 'no-store' } 
         );
 
         if (!res.ok) {
@@ -35,12 +35,11 @@ const LiftCardDetails = async ({
     const { id } = await params;
     const libraryData = await getLibraryData();
 
-    // আইডি ম্যাচ করে ডাটা খোঁজা
+
     const lift = libraryData.find(
         (liftcard: ILiftData) => String(liftcard.id) === String(id)
     );
 
-    // ১ নম্বর সমস্যার সমাধান: lift ডাটা খুঁজে না পাওয়া গেলে এই ব্লকটি দেখাবে
     if (!lift) {
         return (
             <div className="container mx-auto min-h-screen bg-[#0B0D10] text-white flex flex-col justify-center items-center gap-4">
@@ -56,7 +55,7 @@ const LiftCardDetails = async ({
         <div className="container mx-auto min-h-screen bg-[#0B0D10] text-white py-16 px-4 md:px-8 flex justify-center items-center">
             <div className="w-full max-w-5xl bg-[#12141C] border border-gray-800 rounded-2xl p-5 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8 shadow-2xl">
 
-                {/* Image */}
+                
                 <div className="relative w-full aspect-square md:h-full min-h-[350px] md:min-h-[500px] rounded-xl overflow-hidden bg-[#1A1D26]">
                     <Image
                         src={
@@ -70,7 +69,7 @@ const LiftCardDetails = async ({
                     />
                 </div>
 
-                {/* Information */}
+                
                 <div className="flex flex-col justify-between space-y-6">
                     <div>
                         {/* Name */}
@@ -78,12 +77,12 @@ const LiftCardDetails = async ({
                             {lift.name}
                         </h1>
 
-                        {/* Description */}
+                       
                         <p className="text-gray-400 text-sm mt-2 leading-relaxed">
                             {lift.description}
                         </p>
 
-                        {/* Muscle Groups */}
+                        
                         <div className="flex flex-wrap gap-2 mt-4">
                             {lift.muscleGroups?.map(
                                 (muscle: string, idx: number) => (
@@ -97,7 +96,6 @@ const LiftCardDetails = async ({
                             )}
                         </div>
 
-                        {/* Details */}
                         <div className="mt-6 bg-[#1A1D26] rounded-xl p-4 space-y-3 text-sm border border-gray-800/60">
                             <div className="flex justify-between border-b border-gray-800 pb-2">
                                 <span className="text-gray-500 uppercase font-semibold text-xs tracking-wider">Equipment</span>
@@ -135,7 +133,6 @@ const LiftCardDetails = async ({
                             </div>
                         </div>
 
-                        {/* Instructions */}
                         <div className="mt-6">
                             <h3 className="text-xs uppercase font-bold tracking-widest text-gray-400 mb-3">
                                 Instructions
@@ -153,7 +150,6 @@ const LiftCardDetails = async ({
                         </div>
                     </div>
 
-                    {/* Buttons Section - কারখানার নিচে বাটনের জায়গা বা একশন যোগ করতে পারেন */}
                     <div className="flex gap-4 pt-4 border-t border-gray-800">
                         <TodaysPlanBtn lift={lift} />
                         <SavedForLaterBtn lift={lift} />
